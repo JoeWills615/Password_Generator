@@ -14,7 +14,7 @@ body,
 
 body {
   font-family: sans-serif;
-  background-color: #f9fbfd;
+  background-color:lightblue;
 }
 
 .wrapper {
@@ -28,10 +28,11 @@ header {
   padding: 20px;
   padding-top: 0px;
   color: hsl(206, 17%, 28%);
-}
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
 
 .card {
-  background-color: hsl(0, 0%, 100%);
+  background-color: rgb(193, 199, 206);
   border-radius: 5px;
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
@@ -40,6 +41,7 @@ header {
   margin: 0 auto;
   max-width: 800px;
   padding: 30px 40px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .card-header::after {
@@ -91,6 +93,7 @@ header {
 button[disabled] {
   cursor: default;
   background: #c0c7cf;
+  
 }
 
 .float-right {
@@ -116,6 +119,7 @@ button[disabled] {
   border-radius: 6px;
   resize: none;
   overflow: hidden;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 @media (max-width: 690px) {
