@@ -42,7 +42,7 @@ function generatePassword() {
     );
     return "Please select again!";
   }
-  console.log ("possibleCharacters")
+ 
   var possibleCharacters = [];
 
   if (useLowerCase) {
@@ -65,7 +65,7 @@ function generatePassword() {
       possibleCharacters.push(i);
     }
   }
-  console.log ("conditionsMet")
+  
   var password = "";
 
   for (var i = 0; i < length; i++) {
