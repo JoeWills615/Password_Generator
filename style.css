@@ -106,13 +106,13 @@ button[disabled] {
   appearance: none;
   border: none;
   display: block;
+  text-align: center;
   width: 100%;
   padding-top: 15px;
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 85px;
   font-size: 1.2rem;
-  text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
   border: 2px dashed #c0c7cf;

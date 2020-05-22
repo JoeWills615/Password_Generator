@@ -1,24 +1,45 @@
-var fromPromt = promot ("Select a number 8 through 128")
-var totalCharacters = parsenInt (fromPrompt);
+//Assignment Code
+var generateBtn = document.querySelector("#generate");
 
-console.log (totalCharacters);
-
+//Arrays for the Password
 var typesOfCharacters = {
   lowercase: "abcdefghijklomnopqrstuvwxyz",
-  specialCharacters: "!@#$%^&*()-_+=<>?\[]{}|~`"
+  specialCharacters: "!@#$%^&*()-_+=<>?\[]{}|~`",
+}
+console.log(totalCharacters);
+
+generateBtn.addEventListener("click", writePassword);
+
+function generatePassword() {
+  var fromPrompt = prompt("For your password, enter a number of characters you want to use, between 8 and 128");
+  var totalCharacters = parseInt(fromPrompt);
+
+  if (length < 8 || length > 128) {
+  alert ("Password must be more than 8 characters, but less than 128.");
+  return "Please select again!";
+  }
+
+  if (!lenght) {
+  alert ("Password must be more than 8 characters, but less than 128.");
+  return "Please select again!";
 }
 
-var useLowerCase = confirm("Would you like to use Lowercase letters in your password?")
-var useUpperCase = confirm("Would you like to use Uppercase letters in your password?")
-var useSymbols = confirm("Would you like to use Symbols in your password?")
-var useNumbers = confirm("Would you like to use some Numbers in your password?")
+var useLowerCase = confirm("Would you like to use lowercase letters in your password?");
+var useUpperCase = confirm("Would you like to use uppercase letters in your password?");
+var useSymbols = confirm("Would you like to use symbols in your password?");
+var useNumbers = confirm("Would you like to use some numbers in your password?");
 
 console.log("L: ", useLowerCase);
 console.log("U: ", useUpperCase);
 console.log("S: ", useSymbols);
 console.log("N: ", useNumbers);
 
-var possibleCharacters = []
+if (!useLowerCase && !useUpperCase && !useSymbols && !useNumbers) {
+  alert ("You must choose at least one uppercase, lowercase, symbol or number for your Password");
+  return "Please select again!";
+}
+
+var possibleCharacters = [];
 
 if (useLowerCase) {
   possibleCharacters = possibleCharacters.concat(typesOfCharacters.lowercase.split(""));
@@ -35,7 +56,7 @@ if (useNumbers) {
   }
 }
 
-console.log(possibleCharacters);
+console.log(possibleCharacters)
 
 var password = "";
 
@@ -44,6 +65,9 @@ for (var i = 0; 1 < totalCharacters; i++) {
   password = password + possibleCharacters[position];
 }
 
-document.write(password);
+  return password;
 
-console.log(password);
+function writePassword() {
+    var password = generatePassword();
+    var passwordText = document.querySelector(password),
+}
